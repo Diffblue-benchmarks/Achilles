@@ -73,7 +73,7 @@
                 <configuration>
                     <forkMode>once</forkMode>
                     <workingDirectory>target</workingDirectory>
-                    <argLine>-Djava.library.path=${basedir}/src/main/resources/sigar</argLine>
+                    <argLine>-Djava.library.path=${basedir}/src/main/resources/sigar  -Djacoco-agent.destfile=${project.build.directory}/jacoco.exec</argLine>
                 </configuration>
             </plugin>
         </plugins>
